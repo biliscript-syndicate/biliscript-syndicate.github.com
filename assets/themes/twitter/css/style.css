@@ -2,6 +2,9 @@
 html, body {
   background-color: #eee;
 }
+code, pre {
+	font-family: Menlo,Monaco,Dejavu Sans Mono,Liberation Mono,Consolas,"Lucida Console","Courier New",monospace;
+}
 .navbar {
   margin-bottom: 0;
 }
@@ -68,4 +71,3 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
