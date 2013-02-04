@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: 首页
+tagline: 此处填写副标题
 ---
 {% include JB/setup %}
 

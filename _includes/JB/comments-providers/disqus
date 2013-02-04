@@ -10,5 +10,5 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>请开启JavaScript查看评论。</noscript>
+<a href="http://disqus.com" class="dsq-brlink">评论系统由<span class="logo-disqus">Disqus</span>提供。</a>
