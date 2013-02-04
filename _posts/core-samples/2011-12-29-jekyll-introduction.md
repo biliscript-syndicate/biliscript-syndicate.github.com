@@ -1,5 +1,6 @@
 ---
 layout: post
+author: plusjade
 category : lessons
 tags : [intro, beginner, jekyll, tutorial]
 ---
