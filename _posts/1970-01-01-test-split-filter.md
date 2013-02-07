@@ -25,3 +25,16 @@ Test b:
 
 {% assign a = '1,2,3,4' | split:"," %}
 {{ a[1] }}
+
+Test c:
+
+{% capture data %}
+1 2 3
+4 5 6
+7 8 9
+{% endcapture %}
+{{ data | newline_to_br }}
+{% assign array = data | newline_to_br | split: '<br />' %}
+{% for item in array %}
+{{item}},
+{% endfor %}
