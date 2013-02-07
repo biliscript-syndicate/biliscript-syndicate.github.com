@@ -68,3 +68,9 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
+
+/* Index content container ===================================== */
+.indexContentContainer {
+	margin-top:2em;
+	margin-bottom:3em;
+}
