@@ -11,7 +11,7 @@ tags : []
 
 Does split filter work?
 
-{% assign testArray = "a+b+c+d+e+f" | split:+ %} 
+{% assign testArray = "a+b+c+d+e+f" | split:"+" %} 
 {% for item in testArray %} 
 {% comment %} 
 adding this condition as split adds the separator to the splitted array 
