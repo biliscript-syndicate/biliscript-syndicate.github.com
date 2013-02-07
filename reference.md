@@ -1,13 +1,12 @@
 ---
-layout: post
+layout: page
 title: "API 速查手册"
+author: nekofs
 description: ""
 category: 
 tags: []
 ---
 {% include JB/setup %}
-
-## API 速查手册
 
 ### 运行时
 
@@ -83,57 +82,108 @@ tags: []
 
   * _root:Sprite_
 
-### 接口包装
+### 接口对照表
 
-<table class="table table-bordered table-condensed">
+{% capture data %}
+(Top Level)
+Math                     | Math
+String                   | String
+parseInt()               | parseInt()
+parseFloat()             | parseFloat()
+Vector.&lt;int&gt;()     | $.toIntVector(a:Array):Vector.&lt;int&gt;
+Vector.&lt;uint&gt;()    | $.toUintVector(a:Array):Vector.&lt;uint&gt;
+Vector.&lt;Number&gt;()  | $.toNumberVector(a:Array):Vector.&lt;Number&gt;
+
+flash.display
+BitmapData() | Bitmap.createBitmapData
+Bitmap()     | Bitmap.createBitmap
+Bitmap()     | Bitmap.createParticle
+TextField()  | $.createTextField
+TextField()  | $.createComment
+Sprite()     | $.createCanvas
+Sprite()     | $.createButton
+Shape()      | $.createShape
+
+flash.filters
+BevelFilter()             | $.createBevelFilter
+BitmapFilter()            | (?)
+BitmapFilterQuality       | (DIY)
+BitmapFilterType          | (DIY)
+BlurFilter()              | $.createBlurFilter
+ColorMatrixFilter()       | $.createColorMatrixFilter
+ConvolutionFilter()       | $.createConvolutionFilter
+DisplacementMapFilter()   | $.createDisplacementMapFilter
+DisplacementMapFilterMode | (DIY)
+DropShadowFilter()        | $.createDropShadowFilter
+GlowFilter()              | $.createGlowFilter
+GradientBevelFilter()     | $.createGradientBevelFilter
+GradientGlowFilter()      | $.createGradientGlowFilter
+ShaderFilter()            | (?)
+
+flash.geom
+ColorTransform()        | $.createColorTransform
+Matrix()                | $.createMatrix
+Matrix()                | $.createGradientBox
+Matrix3D()              | $.createMatrix3D
+Orientation3D           | (DIY)
+PerspectiveProjection() | (?)
+Point()                 | $.createPoint
+Rectangle()             | Bitmap.createRectangle
+Transform()             | (?)
+Utils3D                 | (n/a)
+Vector3D()              | $.createVector3D
+
+flash.utils
+clearTimeout() | clearTimeout
+getTimer()     | getTimer
+setTimeout()   | timer
+ByteArray()    | (?)
+Timer()        | interval
+
+org.libspark.betweenas3 http://www.libspark.org/wiki/BetweenAS3/en
+BetweenAS3 | Tween
+{% endcapture %}
+{% assign rows = data | newline_to_br | strip_newlines | split: '<br />' %}
+{% assign ASDOC = 'http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3' %}
+<table class="table table-bordered table-condensed table-hover">
 <tbody>
-<tr><td rowspan="7">(Top Level)</td><td>Math</td><td rowspan="4"></td><td>Math</td></tr>
-<tr><td>String</td><td>String (fromCharCode)</td></tr>
-<tr><td>parseInt()</td><td>parseInt</td></tr>
-<tr><td>parseFloat()</td><td>parseFloat</td></tr>
-<tr><td>Vector.&lt;int&gt;()</td><td rowspan="3">$, Display</td><td>toIntVector(a:Array)</td></tr>
-<tr><td>Vector.&lt;uint&gt;()</td><td>toUintVector(a:Array)</td></tr>
-<tr><td>Vector.&lt;Number&gt;()</td><td>toNumberVector(a:Array)</td></tr>
-
-
-<tr><td rowspan="5">flash.display</td><td>BitmapData()</td><td rowspan="2">Bitmap</td><td>createBitmapData</td></tr>
-<tr><td>Bitmap()</td><td>createBitmap, createParticle</td></tr>
-<tr><td>TextField()</td><td rowspan="3">$, Display</td><td>createTextField, createComment</td></tr>
-<tr><td>Sprite()</td><td>createCanvas, createButton</td></tr>
-<tr><td>Shape()</td><td>createShape</td></tr>
-
-<tr><td rowspan="14">flash.filters</td><td>BevelFilter()</td><td rowspan="14">$, Display</td><td>createBevelFilter</td></tr>
-<tr><td>BitmapFilter()</td><td>?</td></tr>
-<tr><td>BitmapFilterQuality</td><td>(DIY)</td></tr>
-<tr><td>BitmapFilterType</td><td>(DIY)</td></tr>
-<tr><td>BlurFilter()</td><td>createBlurFilter</td></tr>
-<tr><td>ColorMatrixFilter()</td><td>createColorMatrixFilter</td></tr>
-<tr><td>ConvolutionFilter()</td><td>createConvolutionFilter</td></tr>
-<tr><td>DisplacementMapFilter()</td><td>createDisplacementMapFilter</td></tr>
-<tr><td>DisplacementMapFilterMode</td><td>(DIY)</td></tr>
-<tr><td>DropShadowFilter()</td><td>createDropShadowFilter</td></tr>
-<tr><td>GlowFilter()</td><td>createGlowFilter</td></tr>
-<tr><td>GradientBevelFilter()</td><td>createGradientBevelFilter</td></tr>
-<tr><td>GradientGlowFilter()</td><td>GradientGlowFilter</td></tr>
-<tr><td>ShaderFilter()</td><td>?</td></tr>
-
-<tr><td rowspan="10">flash.geom</td><td>ColorTransform()</td><td rowspan="6">$, Display</td><td>createColorTransform</td></tr>
-<tr><td>Matrix()</td><td>createMatrix, createGradientBox</td></tr>
-<tr><td>Matrix3D()</td><td>createMatrix3D</td></tr>
-<tr><td>Orientation3D()</td><td>(DIY)</td></tr>
-<tr><td>PerspectiveProjection()</td><td>?</td></tr>
-<tr><td>Point()</td><td>createPoint</td></tr>
-<tr><td>Rectangle()</td><td>Bitmap</td><td>createRectangle</td></tr>
-<tr><td>Transform()</td><td rowspan="3">$, Display</td><td>?</td></tr>
-<tr><td>Utils3D</td><td>n/a</td></tr>
-<tr><td>Vector3D()</td><td>createVector3D</td></tr>
-
-<tr><td rowspan="5">flash.utils</td><td>clearTimeout()</td><td rowspan="3"></td><td>clearTimeout</td></tr>
-<tr><td>getTimer()</td><td>getTimer</td></tr>
-<tr><td>setTimeout()</td><td>timer</td></tr>
-<tr><td>ByteArray()</td><td>bitmapData</td><td>getPixels</td></tr>
-<tr><td>Timer()</td><td></td><td>interval</td></tr>
-
-<tr><td>org.libspark.betweenas3</td><td>BetweenAS3</td><td></td><td>Tween</td></tr>
+{% for row in rows %}
+  {% if row != '' %}
+    <tr>
+    {% assign cells = row | split: '|' %}
+    {% if cells.size == 1 %}
+      {% if row contains '://' %}
+        {% assign namespace = 'no doc' %}
+        {% assign fields = row | split: ' ' %}
+        <th colspan="3"><a href="{{fields[1]}}">{{fields[0]}}</a></th>
+      {% else %}
+        {% assign namespace = row | remove: '(Top Level)' | remove: ' ' %}
+        {% if namespace != '' %}{% assign namespace = namespace | prepend: '.' %}{% endif %}
+        <th colspan="3"><a href="{{ASDOC}}{{namespace | replace:'.','/'}}/package-detail.html">{{row}}</a></th>
+      {% endif %}
+    {% elsif namespace == 'no doc' %}
+      <td>{{cells[0]}}</td><td>{{cells[1]}}</td>
+    {% else %}
+      <td>
+      {% assign syms = cells[0] | split: '(' %}
+      {% assign syms = syms.first | split: '.' %}
+      {% assign sym = syms.first | remove: ' ' %}
+      {% assign chars = sym | split: '' %}
+      {% assign cap = chars.first | capitalize %}
+      {% assign tail = cells[0] | remove_first: sym %}
+        <a href="{{ASDOC}}{{namespace | replace:'.','/'}}/{% if cap == chars.first %}{{sym}}.html{% else %}package.html#{{sym}}{{tail}}{% endif %}">{{sym}}</a>{{tail}}
+      </td>
+      <td>
+      {% assign syms = cells[1] | split: '(' %}
+      {% assign tail = cells[1] | remove_first: syms.first %}
+      {% assign syms = syms.first | split: '.' %}
+      {% assign a = syms.first | remove: ' ' %}
+      {% assign b = syms.last | remove: ' ' %}
+        {% if a != '' %}<a href="#{{a}}">{{a}}</a>{% endif %}{% if syms.size > 1 %}.<a href="#{{b}}">{{b}}</a>{% endif %}{{tail}}
+      </td>
+    {% endif %}
+    </tr>
+  {% endif %}
+{% endfor %}
 </tbody>
 </table>
