@@ -9,13 +9,13 @@
     <div class="pagination">
       <ul>
       {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 前</a></li>
       {% else %}
         <li class="prev disabled"><a>&larr; 前</a></li>
       {% endif %}
         <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">存档</a></li>
       {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">后 &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>后 &rarr;</a>
       {% endif %}
