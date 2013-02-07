@@ -20,3 +20,8 @@ adding this condition as split adds the separator to the splitted array
 {{item}}- 
 {% endif %} 
 {% endfor %} 
+
+Test b:
+
+{% assign a = '1,2,3,4' | split:"," %}
+{{ a[1] }}
