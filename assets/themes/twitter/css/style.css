@@ -2,6 +2,11 @@
 html, body {
   background-color: #eee;
 }
+code {
+  color: #555;
+  border: none;
+  background-color: transparent;
+}
 .navbar {
   margin-bottom: 0;
 }

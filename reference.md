@@ -10,77 +10,147 @@ tags: []
 
 ### 运行时
 
-* **trace**(... args):void
+* **trace**(... args):void  
+  例`trace(1, 2, [3,4], '5 6', trace);`
 
 * **clear**():void
 
-* $G, Global
-  * **\_set**(name:String, value:\*):void
-  * **\_**, **\_get**(name:String):\*
+* $G.**\_set**(name:String, value:\*):void (Global.\_set)
 
-* ScriptManager
-  * **clearTimer**():void
-  * **clearEl**():void
-  * **clearTrigger**():void
-  * *pushTimer(param1:Timer):void*
-  * *popTimer(param1:Timer):void*
-  * *pushEl(param1:IMotionElement):void*
-  * *popEl(param1:IMotionElement):void*
+* $G.**\_get**(name:String):\* ($G.\_, Global.\_get, Global.\_)
+
+* ScriptManager.**clearTimer**():void  
+  停止并清除所有interval()产生的计时器。
+
+* ScriptManager.**clearEl**():void  
+  停止并清除$.createComment、$.createShape、$.createCanvas、$.createButton产生的MotionElement。
+
+* ScriptManager.**clearTrigger**():void  
+  清除所有Player.keyTrigger()产生的键盘事件侦听。
+
+{% comment %}
+These methods are public but only feasible for internal use.
+
+* ScriptManager.**pushTimer**(param1:Timer):void
+
+* ScriptManager.**popTimer**(param1:Timer):void
+
+* ScriptManager.**pushEl**(param1:IMotionElement):void
+
+* ScriptManager.**popEl**(param1:IMotionElement):void
+{% endcomment %}
 
 * **load**(library:String, onload:Function):void  
   只有`libBitmap`可用。只在加载成功时调用onload。
 
-### 语言
+* **getTimer**():int  
+  毫秒
+
+* $.**root**  
+  非公开
+
+### Utils
 
 * **foreach**(object:Object, iterator:Function):void (Utils.foreach)  
-  只能访问公开可遍历属性。
+  只能访问公开可遍历属性。例`foreach({1:2, 3:4}, function(key, value) {trace(key, value);});`
 
 * **clone**(object:\*):\* (Utils.clone)  
   有些（TODO）类型无法正确复制
 
-### 数据转换
-* Utils
+* **timer**(exec:Function, delay_msec:Number = 1000):uint (Utils.delay)  
+  delay最小为1。
 
-  * **hue**(value:int):int  
-    TODO
-  * **rgb**(r:int, g:int, b:int):int  
-    TODO `r << 16 | g << 8 | b` ?
-  * **formatTimes**(second:Number):String  
-    时间格式mm:ss
-  * **rand**(min:Number, max:Number):Number
-  * **distance**(x1:Number, y1:Number, x2:Number, y2:Number):Number
+* **clearTimeout**(id:uint)  
+  提前结束延时，id由之前timer()返回。
 
-### 播放器信息 
+* **interval**(exec:Function, delay_msec:Number = 1000, repeatCount:uint = 1):void (Utils.interval)  
+  repeatCount为0则无限重复。delay推荐最小20（再小60fps运行不过来）。
 
-* Player
-  * **state**:String
-  * **time**:Number
-  * **width**, **height**:uint
-  * **videoWidth**, **videoHeight**:uint
-  * **commentList**:Array
+* Utils.**hue**(value:int):int  
+  TODO
 
-* $, Display
-  * **fullScreenWidth**, **fullScreenHeight**:uint
-  * **width**, **height**:uint
-  * _**screenWidth**, **screenHeight**:uint_
-  * _**stageWidth**, **stageHeight**:uint_
+* Utils.**rgb**(r:int, g:int, b:int):int   
+  耗时是 `r << 16 | g << 8 | b` 的2倍。
+{% comment %}
+      N = 100000;
+      rgb = Utils.rgb;
+      var r, g, b, result;
 
-### 播放器控制
+      start = getTimer();
+      var i = N;
+      while (i--);
+      trace('idle', (getTimer() - start) * 1000 / N, 'us/loop');
 
-* Player
-  * **play**():void
-  * **pause**():void
-  * **seek**(time_msec:Number):void
-  * **jump**(av:String, page:int = 1, newwindow:Boolean = false):void
-  * **commentTrigger**(onComment:Function, timeout_msec:Number = 1000):uint
-  * **keyTrigger**(onKey:Function, timeout_msec:Number = 1000, up:Boolean = false):uint
-  * **setMask**(mask:DisplayObject):void
-  * **createSound**(name:String, onload:Function = null):ScriptSound
-  * **refreshRate**:int
+      start = getTimer();
+      var i = N;
+      while (i--)
+          result = r << 16 | g << 8 | b;
+      trace('manual', (getTimer() - start) * 1000 / N, 'us/loop');
 
-* $, Display
+      start = getTimer();
+      var i = N;
+      while (i--)
+          result = rgb(r,g,b);
+      trace('rgb()', (getTimer() - start) * 1000 / N, 'us/loop');
 
-  * _root:Sprite_
+      //idle 0.87 us/loop
+      //manual 2.47 us/loop
+      //rgb() 4.16 us/loop
+{% endcomment %}
+
+* Utils.**formatTimes**(second:Number):String  
+  时间格式mm:ss；例`trace(Utils.formatTimes(Player.time / 1000));`
+
+* Utils.**rand**(min:Number, max:Number):Number  
+  整数，即`Math.floor(min + Math.random() * (max - min))`
+
+* Utils.**distance**(x1:Number, y1:Number, x2:Number, y2:Number):Number  
+  即`Math.sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2))`
+
+### Player信息
+
+{% capture table %}
+Player.<strong>videoWidth</strong> | Player.<strong>videoHeight</strong> | 视频等比例尺寸
+Player.width          | Player.height          | 播放窗口尺寸；包括黑边
+$.<strong>width</strong>           | $.<strong>height</strong>           | 同上
+$.<strong>stageWidth</strong>      | $.<strong>stageHeight</strong>      | 包括用户界面的尺寸
+$.<strong>screenWidth</strong>     | $.<strong>screenHeight</strong>     | 屏幕尺寸
+$.fullScreenWidth     | $.fullScreenHeight     | 同上
+{% endcapture %}
+{% include table %}
+
+* Player.**state**:String  
+  `stop`, `pause`, `playing`
+
+* Player.**time**:Number  
+  毫秒
+
+* Player.**commentList**:Array
+
+
+### Player控制
+
+* Player.**play**():void
+
+* Player.**pause**():void
+
+* Player.**seek**(time_msec:Number):void  
+  只能seek到关键帧。
+
+* Player.**jump**(av:String, page:int = 1, newwindow:Boolean = false):void
+
+* Player.**commentTrigger**(onComment:Function, timeout_msec:Number = 1000):uint
+
+* Player.**keyTrigger**(onKey:Function, timeout_msec:Number = 1000, up:Boolean = false):uint
+
+* Player.**setMask**(mask:DisplayObject):void  
+  即`player.parent.mask = mask;`
+
+* Player.**createSound**(sample:String, onload:Function = null):ScriptSound  
+  还不知道有什么采样可用
+
+* Player.**refreshRate**:int  
+  不工作；暂不修复，60帧可用。
 
 ### 接口对照表
 
@@ -107,13 +177,13 @@ Shape()      | $.createShape
 flash.filters
 BevelFilter()             | $.createBevelFilter
 BitmapFilter()            | (?)
-BitmapFilterQuality       | (DIY)
-BitmapFilterType          | (DIY)
+BitmapFilterQuality       | (自行枚举)
+BitmapFilterType          | (自行枚举)
 BlurFilter()              | $.createBlurFilter
 ColorMatrixFilter()       | $.createColorMatrixFilter
 ConvolutionFilter()       | $.createConvolutionFilter
 DisplacementMapFilter()   | $.createDisplacementMapFilter
-DisplacementMapFilterMode | (DIY)
+DisplacementMapFilterMode | (自行枚举)
 DropShadowFilter()        | $.createDropShadowFilter
 GlowFilter()              | $.createGlowFilter
 GradientBevelFilter()     | $.createGradientBevelFilter
@@ -125,7 +195,7 @@ ColorTransform()        | $.createColorTransform
 Matrix()                | $.createMatrix
 Matrix()                | $.createGradientBox
 Matrix3D()              | $.createMatrix3D
-Orientation3D           | (DIY)
+Orientation3D           | (自行枚举)
 PerspectiveProjection() | (?)
 Point()                 | $.createPoint
 Rectangle()             | Bitmap.createRectangle
@@ -145,7 +215,7 @@ BetweenAS3 | Tween
 {% endcapture %}
 {% assign rows = data | newline_to_br | strip_newlines | split: '<br />' %}
 {% assign ASDOC = 'http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3' %}
-<table class="table table-bordered table-condensed table-hover">
+<table class="table table-bordered table-condensed table-striped">
 <tbody>
 {% for row in rows %}
   {% if row != '' %}

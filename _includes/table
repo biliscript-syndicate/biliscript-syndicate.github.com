@@ -1,0 +1,15 @@
+{% assign rows = table | newline_to_br | strip_newlines | split: '<br />' %}
+<table class="table table-bordered table-condensed table-striped">
+<tbody>
+{% for row in rows %}
+  {% if row != '' %}
+    <tr>
+    {% assign cells = row | split: '|' %}
+    {% for cell in cells %}
+      <td>{{cell}}</td>
+    {% endfor %}
+    </tr>
+  {% endif %}
+{% endfor %}
+</tbody>
+</table>
