@@ -1,5 +1,5 @@
 {% assign rows = table | newline_to_br | strip_newlines | split: '<br />' %}
-<table class="table table-bordered table-condensed table-striped">
+<table markdown="1" class="table table-bordered table-condensed table-striped">
 <tbody>
 {% for row in rows %}
   {% if row != '' %}

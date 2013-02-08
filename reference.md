@@ -110,11 +110,11 @@ These methods are public but only feasible for internal use.
 ### Player信息
 
 {% capture table %}
-Player.<strong>videoWidth</strong> | Player.<strong>videoHeight</strong> | 视频等比例尺寸
-Player.width          | Player.height          | 播放窗口尺寸；包括黑边
-$.<strong>width</strong>           | $.<strong>height</strong>           | 同上
-$.<strong>stageWidth</strong>      | $.<strong>stageHeight</strong>      | 包括用户界面的尺寸
-$.<strong>screenWidth</strong>     | $.<strong>screenHeight</strong>     | 屏幕尺寸
+Player.**videoWidth** | Player.**videoHeight** | 视频等比例尺寸
+$.**width**           | $.**height**           | 播放窗口尺寸；包括黑边
+Player.width          | Player.height          | 同上
+$.**stageWidth**      | $.**stageHeight**      | 包括用户界面的尺寸
+$.**screenWidth**     | $.**screenHeight**     | 屏幕尺寸
 $.fullScreenWidth     | $.fullScreenHeight     | 同上
 {% endcapture %}
 {% include table %}
