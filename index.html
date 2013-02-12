@@ -1,0 +1,18 @@
+---
+layout: page
+title: 最近日志
+tagline: 关于bilibili.tv弹幕播放器的技术文档和消息
+---
+{% include JB/setup %}
+
+{% for post in site.posts %}
+  <div class="span8" style="margin-top: 3em;">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p style="text-align: right">{{ post.date | date: "%Y年%m月%d日" }}{% if post.author %} - {{ post.author }}{% endif %}</p>
+    {{ post.content | split:'<!-- break -->' | first }}
+    {% if post.content contains '<!-- break -->' %}
+      <a href="{{ BASE_PATH }}{{ post.url }}">(继续阅读)…</a>
+    {% endif %}
+  </div>
+{% endfor %}

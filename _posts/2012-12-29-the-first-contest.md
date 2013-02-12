@@ -11,8 +11,9 @@ tags : []
 
 （原发表于space.bilibili.tv）
 
-公告：http://www.bilibili.tv/html/danmubisai.html
-投票：http://www.bilibili.tv/list/vote/1.html
+公告：<http://www.bilibili.tv/html/danmubisai.html>
+
+投票：<http://www.bilibili.tv/list/vote/1.html>
 
 这是一个Flash播放器中诞生的demoscene。弹幕从此从视频的次级内容升级成主要内容。
 
@@ -29,6 +30,8 @@ tags : []
 细节上影响图形质量的两个主要问题：播放器帧率的refreshRate接口不工作因此被卡死在24fps（更新：播放器已提高到60fps）；无法嵌入优质字体，默认字体是渣（不一致的客户端破坏布局排版）。
 
 评选方式还可改善：排序固定和实时显示结果造成群体极化、未按形式分组造成候选量过大。
+
+<!-- break -->
 
 ### 音MAD（原创）
 
