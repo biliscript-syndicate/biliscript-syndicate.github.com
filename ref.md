@@ -3,8 +3,7 @@ layout: page
 title: "速查手册"
 author: nekofs
 description: ""
-category: 
-tags: []
+group: navigation
 ---
 {% include JB/setup %}
 

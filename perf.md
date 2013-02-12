@@ -2,8 +2,7 @@
 layout: page
 title: "性能"
 description: ""
-category: 
-tags: []
+group: navigation
 ---
 {% include JB/setup %}
 

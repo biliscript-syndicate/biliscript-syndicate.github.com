@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "convertHSBtoRGB()"
-category: examples
+group: example
 ---
 {% include JB/setup %}
 
