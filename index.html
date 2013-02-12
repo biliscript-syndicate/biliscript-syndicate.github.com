@@ -1,18 +1,42 @@
 ---
 layout: page
-title: 最近日志
-tagline: 关于bilibili.tv弹幕播放器的技术文档和消息
+title: 日志
+tagline: 关于bilibili弹幕播放器的技术文档及消息
 ---
 {% include JB/setup %}
 
+<div class="row">
+<div class="span8">
 {% for post in site.posts %}
-  <div class="span8" style="margin-top: 3em;">
+  <div style="margin-bottom: 3em;">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <hr style="margin: 0.5em 0;" />
-    <p style="text-align: right">{{ post.date | date: "%Y年%m月%d日" }}{% if post.author %} - {{ post.author }}{% endif %}</p>
+    <p class="text-right">{% if post.author %}{{ post.author }} / {% endif %}{{ post.date | date: "%Y年%m月%d日" }}</p>
     {{ post.content | split:'<!-- break -->' | first }}
     {% if post.content contains '<!-- break -->' %}
       <a href="{{ BASE_PATH }}{{ post.url }}">(继续阅读)…</a>
     {% endif %}
   </div>
 {% endfor %}
+</div>
+<div class="span4">
+  <h4><a href="/about.html">关于</a></h4>
+  <h4><a href="/tools.html">弹幕制作工具</a></h4>
+    <ul>
+      <li><strong>弹幕塚</strong> - 离线开发环境</li>
+      <li><strong>P4M8</strong> - 绘画工具</li>
+    </ul>
+  <h4><a href="/categories.html">日志分类</a></h4>
+  <h4><a href="/archive.html">日志存档</a></h4>
+  <h4><a href="/atom.xml">订阅 Atom 1.0 XML</a></h4>
+  <hr />
+  <h4>播放器更新历史</h4>
+  <ul>
+  {% for post in site.posts %}
+    {% if post.category == 'update' %}
+      <li>{{ post.content }}</li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+</div>

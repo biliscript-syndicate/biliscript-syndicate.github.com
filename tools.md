@@ -2,7 +2,6 @@
 layout: page
 title: "工具"
 description: ""
-group: navigation
 ---
 {% include JB/setup %}
 
