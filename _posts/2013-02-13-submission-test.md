@@ -9,6 +9,10 @@ tags : []
 ---
 {% include JB/setup %}
 
+弹幕艺术联合文档希望能把弹幕艺术相关的信息收集聚合在一起，便于信息的查阅和更多开发。
+
+把文章发布到此处的步骤简单，列如下：
+
 1. 打开[github](https://github.com/)，填写用户名、邮箱、密码，点击“Sign up for free”。
 2. 联系[一个成员](https://github.com/biliscript-syndicate?tab=members)。
 3. 该成员将你[加入](https://github.com/organizations/biliscript-syndicate/teams)。
