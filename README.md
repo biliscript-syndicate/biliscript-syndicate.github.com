@@ -1,42 +1,16 @@
-# Jekyll-Bootstrap
+## 发布文章方法
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+弹幕艺术联合文档希望能把弹幕艺术相关的信息收集聚合在一起，便于信息的查阅和更多开发。
 
-## Usage
+把文章发布到此处的步骤简单，列如下：
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
-
-## Version
-
-0.2.13 - stable and versioned using [semantic versioning](http://semver.org/).
-
-## Contributing 
-
-This repository tracks 2 projects:
-
-- **Jekyll-Bootstrap Framework.**  
-  The framework for which users should clone and build their blog on top of is available in the master branch.
-  
-  To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-  This is very important as it allows me to accept your pull request without having to publish a public version release.
-  
-  Small, atomic Features, bugs, etc.   
-  Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.   
-  Please rebase as often as possible when working.   
-  Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
-  
-  For Big Features or major API extensions/edits:   
-  This is the one case where I'll accept pull-requests based off the master branch.
-  This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-  Translation : it might take a bit longer so please be patient! (but sincerely thank you).
- 
-- **Jekyll-Bootstrap Documentation Website.**    
-  The documentation website at <http://jekyllbootstrap.com> is maintained in the gh-pages branch.
-  Please fork and contribute documentation additions to this branch only.
-
-The master and gh-pages branch do not share the same ancestry. Please treat them as completely separate git repositories!
-
-
-## License
-
-[Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+1. 打开[github](https://github.com/)，填写用户名、邮箱、密码，点击“Sign up for free”。
+2. 联系[一个成员](https://github.com/biliscript-syndicate?tab=members)。
+3. 该成员将你[加入](https://github.com/organizations/biliscript-syndicate/teams)。
+4. 打开[\_posts目录](https://github.com/biliscript-syndicate/biliscript-syndicate.github.com/tree/master/_posts)。
+5. 点击`[+]`图标“Create a new file here”。
+6. 填写文件名，必须为`yyyy-mm-dd-ascii-string.md`格式，标明日志发表时间和URL。
+7. 打开[样例日志](https://raw.github.com/biliscript-syndicate/biliscript-syndicate.github.com/master/_posts/2013-02-07-hello-world.md)，复制代码到文本框，填写或修改相应内容。
+8. 添加[Markdown](http://zh.wikipedia.org/wiki/Markdown)标记语言。
+9. 点击“Commit New File”。
+10. 发现问题可以回到_posts目录点击“Edit”修改。
