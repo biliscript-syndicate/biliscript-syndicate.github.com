@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 首页
-tagline: 
+title: 最近日志
+tagline: 关于bilibili.tv弹幕播放器的技术文档和消息
 ---
 
 <ul class="posts">
