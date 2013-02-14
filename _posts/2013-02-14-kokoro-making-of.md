@@ -71,6 +71,7 @@ style: "p {margin-bottom: 30px;}"
 [![img11]](http://wonderfl.net/c/7prR)
 
 以上三个特效点击图片可以进入观看并查看代码。
+
 最后的一个分镜使用的背景图片：
 
 ![img12]
@@ -83,7 +84,7 @@ style: "p {margin-bottom: 30px;}"
 
 最后附上制作这个作品中使用到的转换工具，能够支持SVG部分常用的特性，凑合用足够了～
 
-（未完待续）
+[下载SVG2BiliScript.rar](/res/kororo-making-of/SVG2BiliScript.rar) (165KB)
 
 {% assign res = '/res/kororo-making-of' %}
 [img0]: {{res}}/img0.jpg
