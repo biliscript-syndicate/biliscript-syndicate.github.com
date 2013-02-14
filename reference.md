@@ -372,3 +372,4 @@ TODO
 * flash.display::Graphics里面没有cubicCurveTo方法，这是在FP11.0的特性（2011年10月）。
 * 字符串中的`/n`会在提交后被转义成换行。
 * `[]`访问符语法问题，无法嵌套`a = [0,1]; b = [0,1]; trace(a[0], b[a[0]]);`
+* 调用类静态方法。`String.fromCharCode()`可以这样实现：`''.constructor.fromCharCode()`。
