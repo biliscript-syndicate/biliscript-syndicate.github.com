@@ -4,6 +4,7 @@ title: "速查手册"
 author: nekofs
 description: ""
 group: navigation
+style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 ---
 {% include JB/setup %}
 
