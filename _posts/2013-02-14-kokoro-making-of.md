@@ -89,18 +89,18 @@ tags : []
   
 （未完待续）
 
-
-[img0]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img0_zpsa69bfe05.jpg
-[img1]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img1_zpsb519a945.jpg
-[img2]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img2_zps55441457.jpg
-[img3]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img3_zps73175804.jpg
-[img4]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img4_zpsf0ed06a3.jpg
-[img5]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img5_zpsc5625351.jpg
-[img6]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img6_zps6abbc7c8.jpg
-[img7]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img7_zps4cea7bd4.jpg
-[img8]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img8_zps557adc8f.jpg
-[img9]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img9_zps26cd6d84.jpg
-[img10]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img10_zpsae322cf4.jpg
-[img11]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img11_zps715f15ee.jpg
-[img12]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img12_zpsa6fc32aa.jpg
-[img13]: http://i1305.photobucket.com/albums/s551/xarple/bilibili/img13_zps1ed69065.jpg
+{% assign res = '/res/kororo-making-of' %}
+[img0]: {{res}}/img0.jpg
+[img1]: {{res}}/img1.jpg
+[img2]: {{res}}/img2.jpg
+[img3]: {{res}}/img3.jpg
+[img4]: {{res}}/img4.jpg
+[img5]: {{res}}/img5.jpg
+[img6]: {{res}}/img6.jpg
+[img7]: {{res}}/img7.jpg
+[img8]: {{res}}/img8.jpg
+[img9]: {{res}}/img9.jpg
+[img10]: {{res}}/img10.jpg
+[img11]: {{res}}/img11.jpg
+[img12]: {{res}}/img12.jpg
+[img13]: {{res}}/img13.jpg
