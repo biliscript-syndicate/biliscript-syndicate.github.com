@@ -51,23 +51,23 @@ tags : []
 <br /><br /><br />
 作品中所用到的几乎所有特效都是抄袭自wonderfl，比如这个，看过作品的是不是对这个很熟悉？
 [![img9]](http://wonderfl.net/c/4Wy6)
-<br /><br />
+<br /><br /><br />
 这两个是不是也很熟悉？  
 [![img10]](http://wonderfl.net/c/4gvL)
 <br /><br />
 [![img11]](http://wonderfl.net/c/7prR)
 <br /><br />
-以上三个特效点击图片可以进入观看并查看代码。
+以上三个特效点击图片可以进入观看并查看代码。  
 最后的一个分镜使用的背景图片：
 <img src="/res/kororo-making-of/img12.jpg"  alt="" width="600" height="544"/>
 <br /><br /><br />
 其实是由这张图片修改而来的orz
 [!<img src="/res/kororo-making-of/img13.jpg"  alt="" width="600" height="342"/>](http://penguinfrontier.deviantart.com/art/Kokoro-285343699)
 <br /><br />
-羞耻play就到此结束了～
+羞耻play就到此结束了～  
 最后附上制作这个作品中使用到的转换工具，能够支持SVG部分常用的特性，凑合用足够了～
 <br /><br />
-（未完待续）
+[SVG2BiliScript.rar](/res/kororo-making-of/SVG2BiliScript.rar)
 
 {% assign res = '/res/kororo-making-of' %}
 [img3]: {{res}}/img3.jpg
