@@ -56,7 +56,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 * $.**toUintVector**(uints:Array):[Vector]({{asdoc}}/Vector.html).&amp;lt;uint&amp;gt;
 * $.**toNumberVector**(numbers:Array):[Vector]({{asdoc}}/Vector.html).&amp;lt;Number&amp;gt;
 * String.**[fromCharCode]({{asdoc}}/String.html#fromCharCode%28%29)**(... charCodes):String  
-  Unicode码。例`trace(String.fromCharCode(27979, 35797, 10, 9731, 9773));`
+  Unicode码，0到65535。例`trace(String.fromCharCode(27979, 35797, 10, 9731, 9773));`
 * Utils.**distance**(x1:Number, y1:Number, x2:Number, y2:Number):Number  
   即`Math.sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2))`
 * Utils.**formatTimes**(second:Number):String  
