@@ -11,6 +11,8 @@ tags : []
 
 <strike>都要统一性的写成XXX后记这样的标题的吗？</strike>
 
+<!-- break -->
+
 大家好，我是[EPM](http://space.bilibili.tv/3166)，[Round and Round](http://www.bilibili.tv/video/av410205/)的弹幕作者。虽然早几天受到了邀请说写制作过程什么的不过由于种种原因开始的有些晚呢，并不怎么善于写这样的文，大概需要什么内容也不清楚……大体是参照[前一篇](http://biliscript-syndicate.github.com/news/2013/02/14/kokoro-making-of.html)来的，经验不足质量问题还是请多包涵啦……
 
 我自己应该算是UP主中比较不值得提及的一类，虽然待的时间不算太短不过并没有什么存在感。参加大赛的原因之前在9ch也有提到，与大家比来实在不堪，在此就不再提及了。
