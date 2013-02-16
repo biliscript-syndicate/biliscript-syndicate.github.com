@@ -8,6 +8,8 @@ tags: []
 ---
 {% include JB/setup %}
 
+**更新**：20130216已修复。默认播放器域名还原至hdslb.com。
+
 无法加载Bitmap库。
 
 重现方法`load('libBitmap', function(){trace('ok', Bitmap);});`
