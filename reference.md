@@ -118,7 +118,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
   返回timeout_id。不能用clearTimeout或者ScriptManager清除。
   例`Player.commentTrigger(function(c){trace(c, c.text);}, 1 &lt;&lt; 30);`
 * Player.**createSound**(sample:String, onload:Function = null):ScriptSound  
-  还不知道有什么采样可用。
+  目前已知sample:"btnover" .[查看样例](#Player.createSound-example)
 * Player.**jump**(av:String, page:int = 1, newwindow:Boolean = false):void
 * Player.**keyTrigger**(onKey:Function, timeout_msec:Number = 1000, up:Boolean = false):uint  
   timeout最大2147483647，小于0不工作。返回timeout_id。[查看样例](#Player.keyTrigger-example)。
@@ -303,6 +303,26 @@ TODO
         trace('Key A is', keyPressed.A ? 'pressed.' : 'not pressed.');
     }, 100, 100);
     //Press A and observe debug console
+
+### Player.createSound
+
+   
+     var btn = $.createButton({
+    text:"mouseOver",x:$.width * 0.5 - 60,y:$.height * 0.5 - 15,lifeTime:0,width:120,
+    onclick:function()
+    {
+      trace("btnover");
+    }
+    });		
+    btn.addEventListener("mouseOver",function()
+    { 
+    var sound = 
+     Player.createSound("btnover",function()
+     {
+    	trace(sound.loadPercent(),sound.remove,sound.stop);
+     });	
+    sound.play();
+    });
 
 ### 鼠标定位
 
