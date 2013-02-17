@@ -67,4 +67,17 @@ Array.\[\]略快于Vector.\[\]。（.forEach()和foreach()慢较多，结果未�
 
     //Array.[0] 0.676 us/op
     //Vector.[] 0.797 us/op
+    
+### 时间精度初测
 
+初测getTimer()获取的精度略高于Player.time。输出端似乎只有interval。方法二整合二者
+
+    clear();
+    var bi = 0;
+    var _i = getTimer();
+    var _is = Player.time;
+    interval(function(){
+    trace("时间("+5 * (bi++)+"ms):");
+    trace("Player.time:"+Player.time);
+    trace("方法二："+(_is+(getTimer()-_i)));
+    },5,50);
