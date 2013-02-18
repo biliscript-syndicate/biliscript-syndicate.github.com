@@ -390,7 +390,8 @@ TODO
 * UI控制考虑，.root、.parent、.stage属性被禁止访问。
 * Bitmap.createBitmap的smoothing参数被错别字成smothing。
 * $.createComment、$.createShape、$.createCanvas、$.createButton会给进行DisplayObject.z = null导致产生一个Matrix3D导致图形模糊。解决方法`displayObject.transform.matrix3D = null;`。
-* flash.display::Graphics里面没有cubicCurveTo方法，这是在FP11.0的特性（2011年10月）。
+* flash.display::Graphics里面没有cubicCurveTo方法，这是在FP11.0的特性（2011年10月）。  
+  无法修复。站方player.swf开发环境Flex SDK 4.1尚未支持加入此特性。近期无升级计划。
 * 字符串中的`/n`会在提交后被转义成换行。
 * `[]`访问符语法问题，无法嵌套`a = [0,1]; b = [0,1]; trace(a[0], b[a[0]]);`
 * 调用类静态方法。`String.fromCharCode()`可以这样实现：`''.constructor.fromCharCode()`。
