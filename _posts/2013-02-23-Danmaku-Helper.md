@@ -14,7 +14,10 @@ tags : [工具]
 <!-- break -->
 
 工具预览：
-IMG TODO
+
+![img01]
+
+![img02]
 
 
 以下引用 [面瘫半宅君](http://space.bilibili.tv/92776) 在bilibili吧发布的内容（底部为下载链接）：
@@ -64,4 +67,8 @@ IMG TODO
 有关bug提交:可以访问 [面瘫半宅君](http://tieba.baidu.com/f?tp=0&kw=%C3%E6%CC%B1%B0%EB%D5%AC%BE%FD) 吧 和 [Encode_X](http://tieba.baidu.com/f?tp=0&kw=encode_x) 吧 或 私信两人的微博：[@面瘫半宅君](http://weibo.com/mt233) [@饮茶子](http://weibo.com/encodex)
 
 
-在这里下载 (Link TODO)
+下载文件： [DanmakuHelperVer1.0.zip](http://pan.baidu.com/share/link?shareid=356485&uk=1745881826) (3.11MB,百度网盘)
+
+{% assign res = '/res/DanmakuHelper' %}
+[img01]: {{res}}/01.jpg
+[img02]: {{res}}/02.jpg
