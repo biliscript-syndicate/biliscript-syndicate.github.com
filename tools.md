@@ -13,11 +13,11 @@ description: ""
 
 KPX：“今年已经打算整个gpl放出来…不过目前也就把那边当git用没文字内容”。
 
-### P4M8 - bilibili高级弹幕绘画工具
+### DanmakuHelper
 
-<http://encodex.tuita.com/>
+由[面瘫半宅君](http://space.bilibili.tv/92776)和[音叉(Encode.X)](http://space.bilibili.tv/16425)共同开发的高级弹幕(Mode8)的绘图辅助工具。
 
-TODO
+详见[高级弹幕绘图助手：DanmakuHelper介绍](/news/2013/02/23/Danmaku-Helper.html)。
 
 ### SVG2BiliScript
 
