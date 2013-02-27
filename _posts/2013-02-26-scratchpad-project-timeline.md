@@ -9,7 +9,7 @@ tags : []
 ---
 {% include JB/setup %}
 
-我比较好奇，一个合作代码弹幕项目，会按怎样的过程进行下来，会经历多少情况。偶然一句话，产生了两周的工作，《弹幕涂鸦系统》。以下是[Xarple](http://space.bilibili.tv/140964)与我的合作项目制作日志。
+我比较好奇，一个合作代码弹幕项目，会按怎样的过程进行下来，会经历多少情况。偶然一句话，产生了两周的工作，[《弹幕涂鸦系统》](http://www.bilibili.tv/video/av488629/)。以下是[Xarple](http://space.bilibili.tv/140964)与我的合作项目制作日志。
 
 ![](/res/scratchpad-project-timeline/screenshot.png)
 
