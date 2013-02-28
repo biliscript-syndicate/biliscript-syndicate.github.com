@@ -21,7 +21,7 @@ KPX：“今年已经打算整个gpl放出来…不过目前也就把那边当gi
 
 ### SVG2BiliScript
 
-[xarple](http://xarple.com)开发，把SVG图像转换成Biliscript/Actionscript绘图指令。
+[xarple](http://space.bilibili.tv/140964)开发，把SVG图像转换成Biliscript/Actionscript绘图指令。
 
 [下载](http://biliscript-syndicate.github.com/res/kororo-making-of/SVG2BiliScript.rar) (165K)
 
