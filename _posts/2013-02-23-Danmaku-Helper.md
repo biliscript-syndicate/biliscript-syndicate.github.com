@@ -1,6 +1,6 @@
 ---
 layout: post
-title : 高级弹幕绘图助手：DanmakuHelper
+title : 高级弹幕绘图助手：DanmakuHelper Ver1.1 0301更新
 tagline : 
 author : Encode.X
 description : ""
@@ -16,8 +16,11 @@ tags : [工具]
 <!-- break -->
 
 ![img02]
+<!-- break -->
 
-以下引用 [面瘫半宅君](http://space.bilibili.tv/92776) 在bilibili吧发布的内容（底部为下载链接）：
+![img03]
+
+以下引用 [面汤拌菜菌](http://space.bilibili.tv/92776) 在bilibili吧发布的内容（底部为下载链接）：
 
 去年拜年祭的时候自己也有过类似的工具，但是功能比较局限。同时[音叉(Encode.X)](http://space.bilibili.tv/16425)也开发了类似的工具。去年的弹幕大赛的举办也开启了全会员的高级弹幕权限。所以在去年就想过能够把两个工具合体了。于是这是完成品。
 
@@ -31,11 +34,13 @@ tags : [工具]
 
 4. &nbsp;画布可拖曳放缩，不影响坐标。
 
-5. &nbsp;代码的输出按层顺序，有两种格式选择。同时可以选择输出为文本文件。
+5. &nbsp;可对图片取色。
 
-6. &nbsp;代码支持导入。可选择追加与覆盖两种模式。同时可以选择导入为文本文件。
+6. &nbsp;代码的输出按层顺序，有两种格式选择。同时可以选择输出为文本文件。
 
-7. &nbsp;常用按键全分配了键盘快捷键。可查看帮助信息。鼠标悬停也有提示信息。
+7. &nbsp;代码支持导入。可选择追加与覆盖两种模式。同时可以选择导入为文本文件。
+
+8. &nbsp;常用按键全分配了键盘快捷键。可查看帮助信息。鼠标悬停也有提示信息。
 
 
 由于是音叉与我两人原来工具的合体版本，同时添加了许多新功能。框架是Flex，（UI和基础功能都是音叉设计的，跪_(:з」∠)_）现学现写。
@@ -54,11 +59,25 @@ tags : [工具]
 
 另外帮助文档的帮助是不完全的，请自己暂时再试探着发现一些用法。
 
-有关bug提交:可以访问 [面瘫半宅君](http://tieba.baidu.com/f?tp=0&kw=%C3%E6%CC%B1%B0%EB%D5%AC%BE%FD) 吧 和 [Encode_X](http://tieba.baidu.com/f?tp=0&kw=encode_x) 吧 或 私信两人的微博：[@面瘫半宅君](http://weibo.com/mt233) [@饮茶子](http://weibo.com/encodex)
+有关bug提交:可以访问 [面瘫半宅君](http://tieba.baidu.com/f?tp=0&kw=%C3%E6%CC%B1%B0%EB%D5%AC%BE%FD) 吧 和 [Encode_X](http://tieba.baidu.com/f?tp=0&kw=encode_x) 吧 或 私信两人的微博：[@面汤拌菜菌](http://weibo.com/mt233) [@饮茶子](http://weibo.com/encodex)
 
 
-下载文件： [DanmakuHelperVer1.0.zip](http://pan.baidu.com/share/link?shareid=356485&uk=1745881826) (3.11MB,百度网盘)
+下载文件： [DanmakuHelperVer1.1.zip](http://pan.baidu.com/share/link?shareid=374245&uk=1745881826) (3.2MB,百度网盘)
+
+以下为更新文档：
+-----------------------
+
+Ver1.1 2013-03-01
+________________________________________
+1.修复导入文本、移动层的一些bug。
+2.重写界面UI。
+3.增加moveTo(不可见直线)操作工具。
+4.修改一些冲突的快捷键，将常用工具键放到了易触及的地方。
+5.增加代码区“复制到剪切板”、“清除”两个按钮。
+6.增加取色功能。
+
 
 {% assign res = '/res/DanmakuHelper' %}
-[img01]: {{res}}/01.png
-[img02]: {{res}}/02.png
+[img01]: {{res}}/1_1.png
+[img02]: {{res}}/1_2.png
+[img03]: {{res}}/screenshot20130301202046.png
