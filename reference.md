@@ -376,6 +376,18 @@ TODO
         if (!path.length) return root;
         return getChildFrom(root.getChildAt(path.shift()), path);
     }
+
+### 检测seek
+
+    var probe = $.createShape({lifeTime:0});
+    probe.motionManager.setPlayTime(365 * 24 * 3600 * 1000);
+    $.root.addEventListener('enterFrame', function() {
+        if (!probe.visible) {
+            probe.visible = true;
+            trace('seeking to', Utils.formatTimes(Player.time / 1000));
+        }
+    });
+
 </div>
 </div>
 
