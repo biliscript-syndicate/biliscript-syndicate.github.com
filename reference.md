@@ -125,7 +125,9 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 * Player.**pause**():void
 * Player.**play**():void
 * Player.**refreshRate**:int  
-  不工作；暂不修复，60帧可用。
+  不工作；暂不修复。
+* $.**frameRate**:Number  
+  大于0小于120，超过60一般无意义。
 * Player.**seek**(time_msec:Number):void  
   只能seek到关键帧。
 * Player.**setMask**(mask:DisplayObject):void  
