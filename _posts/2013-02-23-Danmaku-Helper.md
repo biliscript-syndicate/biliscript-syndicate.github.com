@@ -1,6 +1,6 @@
 ---
 layout: post
-title : 高级弹幕绘图助手：DanmakuHelper Ver1.1 0301更新
+title : 高级弹幕绘图助手：DanmakuHelper Ver1.15 0325更新
 tagline : 
 author : Encode.X
 description : ""
