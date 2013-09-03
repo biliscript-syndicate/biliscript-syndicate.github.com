@@ -1,3 +1,12 @@
+Introduction
+============
+
+Biliscript is a programming language used in the scripting engine of [Bilibili](https://en.wikipedia.org/wiki/Bilibili) [Flash Player](https://static-s.bilibili.tv/play.swf). With the scripting engine, users and authors are able to create interactive subtitles, graphics, and games, enhancing the interactive experience of video playback.
+
+Biliscript is a dialect of ECMAScript interpreted with the [BISE Scripting Engine](http://kinsmangames.wordpress.com/bise-scripting-engine/), which is again written in ActionScript and run by the Flash runtime, and supplmented with a subset of ActionScript runtime APIs. Through two layers of interpretion, the engine has very limited syntax and constrained performance, therefore it becomes an interesting challenge to create performance demanding applications within the restricted environment. A group of enthusiasts conduct regular research and contests around the language and engine.
+
+[biliscript-syndicate.github.io](http://biliscript-syndicate.github.io) is a project to collect and document the details of the Biliscript engine.
+
 ## 发布文章方法
 
 弹幕艺术联合文档希望能把弹幕艺术相关的信息收集聚合在一起，便于信息的查阅和更多开发。
