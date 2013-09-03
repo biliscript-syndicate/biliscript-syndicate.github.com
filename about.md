@@ -12,7 +12,7 @@ Biliscript is a programming language used in the scripting engine of [Bilibili](
 
 Biliscript is a dialect of ECMAScript interpreted with the [BISE Scripting Engine](http://kinsmangames.wordpress.com/bise-scripting-engine/), which is again written in ActionScript and run by the Flash runtime, and supplmented with a subset of ActionScript runtime APIs. Through two layers of interpretion, the engine has very limited syntax and constrained performance, therefore it becomes an interesting challenge to create performance demanding applications within the restricted environment. A group of enthusiasts conduct regular research and contests around the language and engine.
 
-[biliscript-syndicate.github.io](http://biliscript-syndicate.github.io) is a project to collect and document the details of the Biliscript engine.
+[biliscript-syndicate.github.io](http://biliscript-syndicate.github.io) is a project to collect and document the details of the Biliscript engine and user created toolchains.
 
 
 起因
