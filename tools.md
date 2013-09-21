@@ -19,11 +19,11 @@ KPX：“今年已经打算整个gpl放出来…不过目前也就把那边当gi
 
 详见[高级弹幕绘图助手：DanmakuHelper介绍](/news/2013/02/23/Danmaku-Helper.html)。
 
-### SVG2BiliScript
+### BiliscriptToolkit
 
-[xarple](http://space.bilibili.tv/140964)开发，把SVG图像转换成Biliscript/Actionscript绘图指令。
+由[xarple](http://space.bilibili.tv/140964)开发的一系列工具集合。
 
-[下载](http://biliscript-syndicate.github.com/res/kororo-making-of/SVG2BiliScript.rar) (165K)
+详见[Biliscript Toolkit介绍](/news/2013/09/21/biliscript-toolkit.html)。
 
 ### SVG to Motifs Parser
 
@@ -49,7 +49,7 @@ Miller Medeiros的[SVG to Motifs Parser](http://blog.millermedeiros.com/converti
 <param name="allowScriptAccess" value="sameDomain" />
 <!--[if !IE]>-->
 <object type="application/x-shockwave-flash" data="/res/tools/hentai.swf" width="550" height="400">
-	<param name="movie" value="hentai.swf" />
+    <param name="movie" value="hentai.swf" />
 	<param name="quality" value="high" />
 	<param name="bgcolor" value="#ffffff" />
 	<param name="play" value="true" />
