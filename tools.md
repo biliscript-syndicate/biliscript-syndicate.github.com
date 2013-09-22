@@ -23,7 +23,7 @@ KPX：“今年已经打算整个gpl放出来…不过目前也就把那边当gi
 
 由[xarple](http://space.bilibili.tv/140964)开发的一系列工具集合。
 
-详见[Biliscript Toolkit介绍](/news/2013/09/21/biliscript-toolkit.html)。
+详见[Biliscript Toolkit介绍](/news/2013/09/22/biliscript-toolkit.html)。
 
 ### SVG to Motifs Parser
 
