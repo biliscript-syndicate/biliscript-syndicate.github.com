@@ -85,7 +85,7 @@ style: "p {margin-bottom: 30px;}"
 最后附上制作这个作品中使用到的转换工具，能够支持SVG部分常用的特性，凑合用足够了～
 
 <del>下载SVG2BiliScript.rar (165KB)</del>
-##### 工具已经合并到[BiliscriptToolkit](http://biliscript-syndicate.github.io/news/2013/09/21/biliscript-toolkit.html) 里面。
+##### 工具已经合并到[BiliscriptToolkit](http://biliscript-syndicate.github.io/news/2013/09/22/biliscript-toolkit.html) 里面。
 
 
 {% assign res = '/res/kororo-making-of' %}
