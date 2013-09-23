@@ -32,3 +32,12 @@ VectorFont2Biliscript是一个能够实现在高级弹幕里嵌入任意矢量�
 - [【弹幕AVG(伪)】玄天·律师事务所](http://www.bilibili.tv/video/av612580/)
 - [当一切支离破碎 你将是拯救我灵魂的唯一](http://www.bilibili.tv/video/av605073/)
 - [【全程高能】 进击的亚瑟王](http://www.bilibili.tv/video/av583881/)
+
+____________________________________________________
+SVG2Biliscript
+--------
+![](/res/biliscript-toolkit/shot2.jpg)
+
+SVG2Biliscript是一个矢量图转换工具，能够将SVG转换成一堆Graphics绘图代码。支持渐变填充、线条样式、渐变线条等矢量特性。
+
+    由于源代码丢失，来不及更新，如果需要使用样例里的解码函数的话，工具里的‘压缩数据’功能出来的base64码需要手动将'+'替换成'-'，还有'/'替换成'_'。
