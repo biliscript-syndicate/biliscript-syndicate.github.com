@@ -72,7 +72,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 
 {% assign geom = asdoc | append: '/flash/geom' %}
 
-无法获得Utils3D。详细参数见Adobe手册页面。
+详细参数见链接的Adobe手册页面。
 
 * $.**createColorTransform**(...):[ColorTransform]({{geom}}/ColorTransform.html)
 * $.**[createGradientBox]({{geom}}/Matrix.html#createGradientBox%28%29)**(...):[Matrix]({geom}}/Matrix.html)  
@@ -85,6 +85,9 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 * **[Rectangle]({{geom}}/Rectangle.html)**  
   `$.root.getRect(null)`或`Bitmap.createRectangle(x, y, w, h)`
 * $.**createVector3D**(...):[Vector3D]({{geom}}/Vector3D.html)
+* $.**[pointTowards]({{geom}}/Utils3D.html#pointTowards%28%29)**(...):[Matrix3D]({{geom}}/Matrix3D.html)
+* $.**[projectVector]({{geom}}/Utils3D.html#projectVector%28%29)**(...):[Vector3D]({{geom}}/Vector3D.html)
+* $.**[pointTowards]({{geom}}/Utils3D.html#pointTowards%28%29)**(...):void
 
 ### 库
 
