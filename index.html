@@ -37,7 +37,7 @@ tagline: 关于bilibili弹幕播放器的技术文档及消息
   <ul>
   {% for post in site.posts %}
     {% if post.category == 'update' %}
-      <li>{{ post.content }}</li>
+      <li>{{ post.content | split:'<!-- break -->' | first }}</li>
     {% endif %}
   {% endfor %}
   </ul>
