@@ -53,9 +53,9 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 
 * **[parseInt]({{asdoc}}/package.html#parseInt%28%29)**(str:String, radix:uint = 0):Number
 * **[parseFloat]({{asdoc}}/packate.html#parseFloat%28%29)**(str:String):Number
-* $.**toIntVector**(ints:Array):[Vector]({{asdoc}}/Vector.html).&amp;lt;int&amp;gt;
-* $.**toUintVector**(uints:Array):[Vector]({{asdoc}}/Vector.html).&amp;lt;uint&amp;gt;
-* $.**toNumberVector**(numbers:Array):[Vector]({{asdoc}}/Vector.html).&amp;lt;Number&amp;gt;
+* $.**toIntVector**(ints:Array):[Vector]({{asdoc}}/Vector.html).&lt;int&gt;
+* $.**toUintVector**(uints:Array):[Vector]({{asdoc}}/Vector.html).&lt;uint&gt;
+* $.**toNumberVector**(numbers:Array):[Vector]({{asdoc}}/Vector.html).&lt;Number&gt;
 * String.**[fromCharCode]({{asdoc}}/String.html#fromCharCode%28%29)**(... charCodes):String  
   Unicode码，0到65535。例`trace(String.fromCharCode(27979, 35797, 10, 9731, 9773));`
 * Utils.**distance**(x1:Number, y1:Number, x2:Number, y2:Number):Number  
@@ -67,7 +67,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 * Utils.**rand**(min:Number, max:Number):Number  
   整数，即`Math.floor(min + Math.random() * (max - min))`
 * Utils.**rgb**(r:int, g:int, b:int):int  
-  耗时是 `r &lt;&lt; 16 | g &lt;&lt; 8 | b` 的2倍。
+  耗时是 `r << 16 | g << 8 | b` 的2倍。
 
 ### 几何
 
@@ -120,7 +120,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 
 * Player.**commentTrigger**(onComment:Function, timeout_msec:Number = 1000):uint  
   返回timeout_id。不能用clearTimeout或者ScriptManager清除。
-  例`Player.commentTrigger(function(c){trace(c, c.text);}, 1 &lt;&lt; 30);`
+  例`Player.commentTrigger(function(c){trace(c, c.text);}, 1 << 30);`
 * Player.**createSound**(sample:String, onload:Function = null):ScriptSound  
   目前已知sample：`btnover`。[查看样例](#Player.createSound-example)
 * Player.**jump**(av:String, page:int = 1, newwindow:Boolean = false):void
@@ -378,7 +378,7 @@ Doesn't work.
     function getChildren(path, node) {
         trace('[' + path + ']', node);
         if (!node.hasOwnProperty('numChildren')) return;
-        for (var i = 0; i &lt; node.numChildren; i++)
+        for (var i = 0; i < node.numChildren; i++)
             getChildren(path.concat(i), node.getChildAt(i));
     }
     getChildren([], $.root);
