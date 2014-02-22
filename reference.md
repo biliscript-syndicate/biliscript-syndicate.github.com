@@ -23,7 +23,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 * **foreach**(object:Object, iterator:Function):void  
   (Utils.foreach) 只能访问公开可遍历属性。例`foreach({1:2, 3:4}, function(key, value) {trace(key, value);});`
 * **load**(library:String, onload:Function):void  
-  只有`libBitmap`可用。只在加载成功时调用onload。例`load('libBitmap', function(){trace('ok', Bitmap);});`
+  （`libBitmap`已内嵌）。只在加载成功时调用onload。例`load('libBitmap', function(){trace('ok', Bitmap);});`
 * **trace**(... args):void  
   例`trace(1, 2, [3,4], '5 6', trace);`
 * $G.**\_get**(name:String):\*  
@@ -350,6 +350,8 @@ TODO
 </div><div class="span6">
 
 ### Bitmap库加载
+
+（Bitmap库已内嵌无需再加载，以下仅作示例。）
 
     function startApplication() {
         var bmd = Bitmap.createBitmapData(40, 30, false, 0xffffff);
