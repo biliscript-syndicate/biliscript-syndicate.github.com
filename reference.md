@@ -15,6 +15,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 
 <div markdown="1" class="row">
 <div class="span6">
+
 ### 基本操作
 
 * **clear**():void
@@ -202,6 +203,7 @@ Doesn't work.
 <div markdown="1" class="row">
 <div class="span6">
 <a id="CommentData"> </a>
+
 ### CommentData
 
 * **blocked**:Boolean
@@ -230,9 +232,9 @@ Doesn't work.
 例`Player.commentList.forEach(function(e) {trace(e.stime, e.text);});`
 
 <a id="MotionManager"> </a>
+
 ### MotionManager
 
-TODO
 * **running**:Boolean \[只读\]
 * **reset**():void
 * **play**():void
@@ -246,6 +248,7 @@ TODO
 </div><div class="span6">
 
 <a id="CommentObjects"> </a>
+
 ### Comment元件通用
 
 * **motionManager**:MotionManager \[只读\]
@@ -290,8 +293,8 @@ TODO
 
 <div markdown="1" class="row">
 <div class="span6">
-
 <a id="Player.keyTrigger-example"> </a>
+
 ### Player.keyTrigger
 
     Keysym = {65: 'A', 68: 'D', 83: 'S', 87: 'W'};
@@ -310,6 +313,7 @@ TODO
     //Press A and observe debug console
 
 <a id="Player.createSound-example"> </a>
+
 ### Player.createSound
 
      var btn = $.createButton({
