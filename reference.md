@@ -88,7 +88,7 @@ style: "body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}"
 * $.**createVector3D**(...):[Vector3D]({{geom}}/Vector3D.html)
 * $.**[pointTowards]({{geom}}/Utils3D.html#pointTowards%28%29)**(...):[Matrix3D]({{geom}}/Matrix3D.html)
 * $.**[projectVector]({{geom}}/Utils3D.html#projectVector%28%29)**(...):[Vector3D]({{geom}}/Vector3D.html)
-* $.**[pointTowards]({{geom}}/Utils3D.html#pointTowards%28%29)**(...):void
+* $.**[projectVectors]({{geom}}/Utils3D.html#projectVectors%28%29)**(...):void
 
 ### 库
 

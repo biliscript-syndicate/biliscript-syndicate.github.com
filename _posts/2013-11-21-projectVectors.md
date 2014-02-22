@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-player.swf **20131120** 。Display库中增加了`pointTowards projectVector pointTowards`函数。曾在9月3日加入，后11月11日改版时未并入新版。今已恢复。projectVectors是若干伪3D效果的基石。以下是两个基于它实现的例子。
+player.swf **20131120** 。Display库中增加了`pointTowards projectVector projectVectors`函数。曾在9月3日加入，后11月11日改版时未并入新版。今已恢复。projectVectors是若干伪3D效果的基石。以下是两个基于它实现的例子。
 
 <!-- break -->
 
