@@ -20,7 +20,7 @@ tags : [工具]
 
 ![img03]
 
-以下引用 [面汤拌菜菌](http://space.bilibili.tv/92776) 在bilibili吧发布的内容（底部为下载链接）：
+以下引用 [面汤拌菜菌](http://space.bilibili.tv/92776) 在[bilibili吧](http://tieba.baidu.com/p/2178184922)发布的内容（底部为下载链接）：
 
 去年拜年祭的时候自己也有过类似的工具，但是功能比较局限。同时[音叉(Encode.X)](http://space.bilibili.tv/16425)也开发了类似的工具。去年的弹幕大赛的举办也开启了全会员的高级弹幕权限。所以在去年就想过能够把两个工具合体了。于是这是完成品。
 
