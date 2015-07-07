@@ -31,7 +31,7 @@ tags: []
 下面是由邀请的画师@毛毛的毛非常毛 确定的弹幕双子的初稿：（真的是辛苦了 鞠躬~）
 
 ####姐姐的形象：
-![sister](../res/danmu-couple/sister.jpg)
+![sister](/res/danmu-couple/sister.jpg)
 
 ####弟弟的形象：
-![brother](../res/danmu-couple/brother.jpg)
+![brother](/res/danmu-couple/brother.jpg)
