@@ -8,7 +8,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-<a href="http://www.bilibili.com/video/av734560/" target="_blank"><span style="color:windowtext; text-decoration:none"><img src="http://i0.hdslb.com/u_f/867a743e12047d9a68b312090ccda0ba.jpg"></span></a>
+<a href="http://www.bilibili.com/video/av734560/" target="_blank"><img src="http://i0.hdslb.com/u_f/867a743e12047d9a68b312090ccda0ba.jpg"></a>
 
 ###写在前面的话：
 
@@ -27,7 +27,7 @@ tags: []
 
 ###蓝白弹幕祭：
 
-<a href="http://www.bilibili.com/topic/153.html" target="_blank"><span style="color:windowtext; text-decoration:none">B站话题</span></a>
+<a href="http://www.bilibili.com/topic/153.html" target="_blank">B站话题</a>
 
 这个活动最初的名称源自日本传统迎新歌会——红白歌合战，称为“蓝白”是由于活动是基于bilibili的弹幕系统，bilibili播放器的代表色调就是蓝和白。
 
@@ -36,30 +36,30 @@ tags: []
 不过，弹幕作品本身制作周期都有一至两月不等，在实际操作上并没有那么明显的阵营分化，已确定的参战者的制作过程都是集体地交流进度，胜负根本不会被他们在乎。所以，这两届名为弹幕祭，实为弹幕基。
 
 **这是第一回蓝白弹幕合战的战场：**
-<a href="http://www.bilibili.com/video/av52096/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i0.hdslb.com/userup/65413/129AD028-2C6.jpg"></span></span></a>
-<a href="http://www.bilibili.com/video/av52094/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i1.hdslb.com/userup/65413/129AD252-5I0.jpg"></span></a>
+<a href="http://www.bilibili.com/video/av52096/" target="_blank"><img width="98" height="128" src="http://i0.hdslb.com/userup/65413/129AD028-2C6.jpg"></a>
+<a href="http://www.bilibili.com/video/av52094/" target="_blank"><img width="98" height="128" src="http://i1.hdslb.com/userup/65413/129AD252-5I0.jpg"></a>
 
 **以及宣传CM和完结ED：**
-<a href="http://www.bilibili.com/video/av50520/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg"></span></a>
-<a href="http://www.bilibili.com/video/av55168/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i0.hdslb.com/userup/2648/12951R325-9339.jpg"></span></a>
-<a href="http://www.bilibili.com/video/av48682/" target="_blank"><span style="color:windowtext; text-decoration:none">周刊29期15m35s处</span></a>
+<a href="http://www.bilibili.com/video/av50520/" target="_blank"><img width="98" height="128" src="http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg"></a>
+<a href="http://www.bilibili.com/video/av55168/" target="_blank"><img width="98" height="128" src="http://i0.hdslb.com/userup/2648/12951R325-9339.jpg"></a>
+<a href="http://www.bilibili.com/video/av48682/" target="_blank">周刊29期15m35s处</a>
 
 **当然，还有应援：**
-<a href="http://www.bilibili.com/video/av51969/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i1.hdslb.com/userup/43861/1295I1Z9-24D.jpg"></span></a>
-<a href="http://www.bilibili.com/video/av54600/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i0.hdslb.com/userup/12477/1296433295-9354.jpg"></span></a>
+<a href="http://www.bilibili.com/video/av51969/" target="_blank"><img width="98" height="128" src="http://i1.hdslb.com/userup/43861/1295I1Z9-24D.jpg"></a>
+<a href="http://www.bilibili.com/video/av54600/" target="_blank"><img width="98" height="128" src="http://i0.hdslb.com/userup/12477/1296433295-9354.jpg"></a>
 
 这也是蓝白弹幕祭的一大特色性话题。
 
 当时的特殊弹幕模式（Mode7）仅有坐标定位，并不能坐标移动。（此届蓝白刚结束，播放器便更新了新的方式）
 
 **这是第二回蓝白弹幕合战的战场：**
-<a href="http://www.bilibili.com/video/av122646/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i0.hdslb.com/userup/65413/129AD028-2C6.jpg"></span></a>
-<a href="http://www.bilibili.com/video/av122647/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i1.hdslb.com/userup/65413/129AD252-5I0.jpg"></span></a>
+<a href="http://www.bilibili.com/video/av122646/" target="_blank"><img width="98" height="128" src="http://i0.hdslb.com/userup/65413/129AD028-2C6.jpg"></a>
+<a href="http://www.bilibili.com/video/av122647/" target="_blank"><img width="98" height="128" src="http://i1.hdslb.com/userup/65413/129AD252-5I0.jpg"></a>
 
 **以及宣传CM和完结ED：**
-<a href="http://www.bilibili.com/video/av115906/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg"></span></a>
-<a href="http://www.bilibili.com/video/av129197/" target="_blank"><span style="color:windowtext; text-decoration:none"><img width="98" height="128" src="http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg"></span></a>
-<a href="http://www.bilibili.com/video/av113916/" target="_blank"><span style="color:windowtext; text-decoration:none">周刊55期16m12s处</span></a>
+<a href="http://www.bilibili.com/video/av115906/" target="_blank"><img width="98" height="128" src="http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg"></a>
+<a href="http://www.bilibili.com/video/av129197/" target="_blank"><img width="98" height="128" src="http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg"></a>
+<a href="http://www.bilibili.com/video/av113916/" target="_blank">周刊55期16m12s处</a>
 
 此时的特殊弹幕模式（Mode7）可以坐标移动，任意字号。（此届蓝白刚结束，播放器便上线了代码弹幕模式（Mode8））
 
